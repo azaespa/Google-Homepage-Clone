@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        body {
+            background-color: #e9e9e9;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav ul li {
+            margin-left: 1em;
+        }
+
+        .nav ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            list-style: none;
+            margin-right: 1em;
+        }
+
+        .nav {
+            display: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-container {
+            width: 400px;
+            box-sizing: border-box;
+            margin-top: 1em;
+            padding: 1em;
+            background-color: red;
+        }
+
+        .search {
+            overflow: hidden;
+            
+        }
+
+        .search #search {
+            width: 100%;
+            border-style: none;
+        }
+
+        .gsearch {
+            margin-top: 2em;
+        }
+
+        .language-offered {
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="images/google-logo.png" alt="Google Logo">
+    </div>
+    <div class="search-form">
+        <form>
+            <div>
+                <div class="search-container">
+                    <div class="search">
+                        <input type="text" id="search">
+                    </div>
+                </div>
+                <div class="gsearch">
+                    <input type="submit" id="gsearch1" value="Google Search">
+                    <input type="submit" id="gsearch2" value="I'm Feeling Lucky">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="language-offered">
+        <span>Google offered in: <a href="#">Filipino</a> <a href="#">Cebuano</a></span>
+    </div>
+</body>
+
+</html>
