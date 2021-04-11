@@ -6,115 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .nav ul li {
-            margin-left: 1em;
-        }
-
-        .nav ul {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            list-style: none;
-            margin-right: 1em;
-        }
-
-        .nav {
-            display: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .logo {
-            display: flex;
-            justify-content: center;
-            margin-top: 1em;
-        }
-
-        .search-form, .btn-search-form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2em;
-        }
-
-        .search-form form {
-            display: flex;
-            flex-basis: 550px;
-            justify-content: center;
-            background-color: white;
-            padding: .5em 1em .5em;
-            border-radius: 50px;
-            border: 1px rgb(194, 194, 194) solid;
-        }
-
-        .search-form form #search {
-            border-style: none;
-            width: 500px;
-            height: 1.5em;
-        }
-
-        .search-form form #search:focus {
-            outline: none;
-        }
-
-        .language-offered {
-            display: flex;
-            justify-content: center;
-            margin-top: 2em;
-        }
-
-        .language-offered * {
-            font-size: 13px;
-        }
-
-        .btn-search-form form{
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 4em;
-            width: 500px;
-            padding: 6px;
-        }
-
-        input[type="submit"] {
-            border-style: none;
-            border-radius: 5px;
-            background-color: rgb(245, 245, 245);
-            padding: .75em 1.25em;
-            margin: .5em;
-        }
-
-        input[type="submit"]:hover {
-            cursor: pointer;
-            box-shadow: 0 0 1px rgb(116, 116, 116) inset,
-            0 1px 2px rgb(199, 199, 199);
-        }
-
-        .search-form form:hover {
-            box-shadow: 0 0 5px rgb(199, 199, 199);
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -143,7 +35,26 @@
     <div class="language-offered">
         <span>Google offered in: <a href="#">Filipino</a> <a href="#">Cebuano</a></span>
     </div>
-    <p>test</p>
+    <div class="google-footer-container">
+        <div class="google-footer">
+            <div id="philippines">
+                <div>Philippines</div>
+            </div>
+            <div id="links">
+                <div id="left">
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Advertising</a></div>
+                    <div><a href="#">Business</a></div>
+                    <div><a href="#">How Search Works</a></div>
+                </div>
+                <div id="right">
+                    <div><a href="#">Privacy</a></div>
+                    <div><a href="#">Terms</a></div>
+                    <div><a href="#">Settings</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
